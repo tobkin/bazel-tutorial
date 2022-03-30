@@ -1,7 +1,11 @@
 package com.example;
 
+import com.engflow.fancytext.*;
+
 public class Greeting {
     public static void sayHi() {
-        System.out.println("Hi!");
+        FancyFormatter ff = FancyFormatter.standard();
+        String greeting = ff.format("Hello World!");
+        System.out.println(greeting);
     }
 }

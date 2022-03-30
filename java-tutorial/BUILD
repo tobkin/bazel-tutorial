@@ -11,5 +11,6 @@ java_library(
     name = "greeter",
     srcs = ["src/main/java/com/example/Greeting.java"],
     visibility = ["//src/main/java/com/example/cmdline:__pkg__"],
+    deps = ["@fancy-text//src/java/com/engflow/fancytext:fancytext"]
 )
 
